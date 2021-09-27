@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Phonesearch</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__logo"></div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__link">О нас</li>
+          <li class="header__link">Каталог</li>
+          <li class="header__link">Оплата</li>
+          <li class="header__link">Доставка</li>
+          <li class="header__link">Контакты</li>
+        </ul>
+      </nav>
+      <span class="header__mobile"></span>
+    </header>
+
+    <main class="main">
+      <aside class="navbar">
+        <div class="navbar__content">
+          <div class="navbar__price">
+            <p class="navbar__price-header">Сортировать</p>
+            <div class="navbar__price-radio">
+              <input class="navbar__price-radio-input" type="radio" name="price" id="up"></input>
+              <label class="navbar__price-radio-label" for="up">По возрастанию цены</label>
+            </div>
+            <div class="navbar__price-radio">
+              <input class="navbar__price-radio-input" type="radio" name="price" id="down"></input>
+              <label class="navbar__price-radio-label" for="down">По убыванию цены</label>
+            </div>
+            <div class="navbar__price-radio">
+              <input class="navbar__price-radio-input" type="radio" name="price" id="rating"></input>
+              <label class="navbar__price-radio-label" for="rating">По рейтингу</label>
+            </div>
+          </div>
+          <div class="navbar__color">
+            <p class="navbar__color-header">Выбрать цвет</p>
+            <div class="navbar__color-checkbox">
+              <input class="navbar__color-checkbox-input" type="checkbox" id="pink">
+              <label class="navbar__color-checkbox-label" for="pink">Розовый</label>
+            </div>
+            <div class="navbar__color-checkbox">
+              <input class="navbar__color-checkbox-input" type="checkbox" id="gray">
+              <label class="navbar__color-checkbox-label" for="gray">Серый</label>
+            </div>
+            <div class="navbar__color-checkbox">
+              <input class="navbar__color-checkbox-input" type="checkbox" id="black">
+              <label class="navbar__color-checkbox-label" for="black">Черный</label>
+            </div>
+            <div class="navbar__color-checkbox">
+              <input class="navbar__color-checkbox-input" type="checkbox" id="green">
+              <label class="navbar__color-checkbox-label" for="green">Зеленый</label>
+            </div>
+          </div>
+          <div class="navbar__brand">
+            <p class="navbar__brand-header">Выбрать бренд</p>
+            <div class="navbar__brand-checkbox">
+              <input class="navbar__brand-checkbox-input" type="checkbox" id="xiaomi">
+              <label class="navbar__brand-checkbox-label" for="xiaomi">Xiaomi</label>
+            </div>
+            <div class="navbar__brand-checkbox">
+              <input class="navbar__brand-checkbox-input" type="checkbox" id="samsung">
+              <label class="navbar__brand-checkbox-label" for="samsung">Samsung</label>
+            </div>
+            <div class="navbar__brand-checkbox">
+              <input class="navbar__brand-checkbox-input" type="checkbox" id="huawei">
+              <label class="navbar__brand-checkbox-label" for="huawei">Huawei</label>
+            </div>
+            <div class="navbar__brand-checkbox">
+              <input class="navbar__brand-checkbox-input" type="checkbox" id="nokia">
+              <label class="navbar__brand-checkbox-label" for="nokia">Nokia</label>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section class="content">
+        <h4 class="content__title">Смартфоны</h4>
+        <div class="content__cards">
+          <div class="content__card" data-price="9555" data-rating="4.9" data-brand="xiaomi" data-color="black">
+            <div class="content__card-image">
+              <img src="./img/img.jpg" alt="smartphone">
+            </div>
+            <h4 class="content__card-name">Смартфон Xiaomi Note 9 3/64GB<br>
+              Черный</h4>
+            <p class="content__card-descr">
+              Диагональ экрана, дюймы: 6.53<br>
+              Емкость аккумулятора, мАч: 5020<br>
+              Процессор: Helio G85 (8 ядер), 2.0 ГГц<br>
+              Рейтинг: <span class="content__card-rating">4.9</span></p>
+            <div class="content__card-footer">
+              <p class="content__card-footer-price">9 555 руб.</p>
+              <a class="content__card-footer-link" href="">Купить</a>
+            </div>
+          </div>
+          <div class="content__card" data-price="11399" data-rating="4.5" data-brand="huawei" data-color="pink">
+            <div class="content__card-image">
+              <img src="./img/img.jpg" alt="smartphone">
+            </div>
+            <h4 class="content__card-name">Смартфон Huawei Note 9 3/64GB<br>
+              Розовый</h4>
+            <p class="content__card-descr">
+              Диагональ экрана, дюймы: 6.53<br>
+              Емкость аккумулятора, мАч: 5020<br>
+              Процессор: Helio G85 (8 ядер), 2.0 ГГц<br>
+              Рейтинг: <span class="content__card-rating">4.5</span></p>
+            <div class="content__card-footer">
+              <p class="content__card-footer-price">11 399 руб.</p>
+              <a class="content__card-footer-link" href="">Купить</a>
+            </div>
+          </div>
+          <div class="content__card" data-price="10999" data-rating="4.3" data-brand="samsung" data-color="gray">
+            <div class="content__card-image">
+              <img src="./img/img.jpg" alt="smartphone">
+            </div>
+            <h4 class="content__card-name">Смартфон Samsung Note 9 3/64GB<br>
+              Серый</h4>
+            <p class="content__card-descr">
+              Диагональ экрана, дюймы: 6.53<br>
+              Емкость аккумулятора, мАч: 5020<br>
+              Процессор: Helio G85 (8 ядер), 2.0 ГГц<br>
+              Рейтинг: <span class="content__card-rating">4.3</span></p>
+            <div class="content__card-footer">
+              <p class="content__card-footer-price">10 999 руб.</p>
+              <a class="content__card-footer-link" href="">Купить</a>
+            </div>
+          </div>
+          <div class="content__card" data-price="12699" data-rating="5" data-brand="nokia" data-color="pink">
+            <div class="content__card-image">
+              <img src="./img/img.jpg" alt="smartphone">
+            </div>
+            <h4 class="content__card-name">Смартфон Nokia Note 9 3/64GB<br>
+              Розовый</h4>
+            <p class="content__card-descr">
+              Диагональ экрана, дюймы: 6.53<br>
+              Емкость аккумулятора, мАч: 5020<br>
+              Процессор: Helio G85 (8 ядер), 2.0 ГГц<br>
+              Рейтинг: <span class="content__card-rating">5.0</span></p>
+            <div class="content__card-footer">
+              <p class="content__card-footer-price">12 699 руб.</p>
+              <a class="content__card-footer-link" href="">Купить</a>
+            </div>
+          </div>
+
+          <div class="content__card" data-price="8699" data-rating="4.6" data-brand="nokia" data-color="green">
+            <div class="content__card-image">
+              <img src="./img/img.jpg" alt="smartphone">
+            </div>
+            <h4 class="content__card-name">Смартфон Nokia Note 9 3/64GB<br>
+              Зеленый</h4>
+            <p class="content__card-descr">
+              Диагональ экрана, дюймы: 6.53<br>
+              Емкость аккумулятора, мАч: 5020<br>
+              Процессор: Helio G85 (8 ядер), 2.0 ГГц<br>
+              Рейтинг: <span class="content__card-rating">4.6</span></p>
+            <div class="content__card-footer">
+              <p class="content__card-footer-price">8 699 руб.</p>
+              <a class="content__card-footer-link" href="">Купить</a>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
